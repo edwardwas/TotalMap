@@ -9,6 +9,17 @@
 {-# LANGUAGE TypeFamilies          #-}
 {-# LANGUAGE UndecidableInstances  #-}
 
+{-|
+Module      : TotalMap
+Description : A total mapp
+Copyright   : (c) Ed Wastell, 2018
+License     : MTL
+Maintainer  : edward@wastell.com
+Stability   : experimental
+
+A total map from an enum type. Consult the README for more information
+-}
+
 module TotalMap
     ( TotalMap()
     , generateAllConstructors
