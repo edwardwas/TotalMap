@@ -5,7 +5,6 @@
 {-# LANGUAGE PolyKinds             #-}
 {-# LANGUAGE RankNTypes            #-}
 {-# LANGUAGE ScopedTypeVariables   #-}
-{-# LANGUAGE TypeApplications      #-}
 {-# LANGUAGE TypeFamilies          #-}
 {-# LANGUAGE UndecidableInstances  #-}
 
@@ -44,7 +43,7 @@ import           Generics.SOP
 --
 -- TODO: This uses undefined internally as I can not convince the type checker that every constructor has no arguments. This shouldn't be an issue, but feels unsafe so probably should be changed
 generateAllConstructors :: IsEnumType tag => NP (K tag) (Code tag)
-generateAllConstructors = hliftA2 aux (hcpure (Proxy @SListI) $ hpure undefined) injections
+generateAllConstructors = hliftA2 aux (hcpure (Proxy :: Proxy SListI) $ hpure undefined) injections
   where
     aux np (Fn inj) = K (to (SOP $ unK $ inj np))
 
