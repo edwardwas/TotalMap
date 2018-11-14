@@ -1,5 +1,12 @@
 language: haskell
 ghc:
-    - "8.2"
-    - "8.4"
-    - "8.6"
+- '8.2'
+- '8.4'
+- '8.6'
+deploy:
+  provider: hackage
+  username: edwardwas
+  password:
+    secure: cpOOOfgagjSNwTMw1GXTIzXUsJmgkfQ8UZr7gsp6nUfB00Y616HxbrxHUWhGjJvjHSuqqStV0pAyn/vt4zSPCzamIIX7PrWHJOe5vjW3vb7uynVgWOuBIA25+TZ0gbRBUOSf9WUDOiGRFwlt2YZZ4AmkZFrzXQLo4pACJSKhnheec3ZxvEUKWZsNi7sCd5oZDOZDHFnOkO25LROQLqsGA+eLZMcco0mj/PJGm1g/Tw+sSNB0J8DmSbGvicq5ImZtYPxqoYnLSaU870oRT3RD6iDSPaDCrGlwT08vKrEsrEIab0mPiNbG7latqWxxjO/cwp9ps1AGkSiQH6P1nI7GybqXiiPdrjINZIvJQDI0iLbIn0axdS+ePHKqOaA0czO0NJqdDW83JasUoDgQflfO3J0HcYsmn6C2jrlB+3laC5e8ZdLDdg4/pcXfJI/WrOH6KT1436/56XSBl8Rq6EkUmULr7g9GRN2sPKFtDceSdI2NKevDrPjn9Ups0RghFUXswbmPb0VYxXCQWOazJrN5Zr6nk7Q55P2paR43e1Uxyc75LV647eh9Ndz0d6fgdRyV/OvMRg/21FhL978FBiPXidbjIQQkOR6qL4D1GHQJQGYW4lUMBQ9hKbssmFp1rtiSVcQOyFSNPj8lx2FqffOGxrRKSn2hVfu1m7Un9Xl6VZ0=
+  on:
+    repo: edwardwas/TotalMap
