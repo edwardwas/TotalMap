@@ -29,7 +29,6 @@ module TotalMap
     , IsEnumType
     ) where
 
-import           Control.Applicative  (liftA2)
 import           Control.Lens         (FoldableWithIndex (..),
                                        FunctorWithIndex (..), Lens',
                                        TraversableWithIndex (..), itoList, lens)
@@ -66,7 +65,7 @@ instance IsEnumType tag => FunctorWithIndex tag (TotalMap tag) where
 
 instance (IsEnumType tag) => Applicative (TotalMap tag) where
     pure a = TotalMap $ hpure (K a)
-    liftA2 f (TotalMap a) (TotalMap b) = TotalMap $ hliftA2 (mapKKK f) a b
+    TotalMap a <*> TotalMap b = TotalMap $ hliftA2 (mapKKK ($)) a b
 
 instance IsEnumType tag => Monad (TotalMap tag) where
   tm >>= f = imap (\tag a -> getTotalMap (f a) tag) tm
