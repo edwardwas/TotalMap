@@ -25,7 +25,7 @@ library
   exposed-modules:     TotalMap
   -- other-modules:       
   -- other-extensions:    
-  build-depends:       base >=4.8 && <4.13
+  build-depends:       base >=4.9 && <4.13
     , generics-sop >= 0.3 && < 0.5
     , lens >= 4.16 && < 4.20
     , adjunctions >= 4.4 && < 4.5
