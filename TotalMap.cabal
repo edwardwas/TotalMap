@@ -2,7 +2,7 @@
 -- documentation, see http://haskell.org/cabal/users-guide/
 
 name:                TotalMap
-version:             0.1.0.0
+version:             0.1.1.0
 synopsis:            A total map datatype
 description:         Provides a datatype representing a total map using an enum type as keys
 license:             MIT

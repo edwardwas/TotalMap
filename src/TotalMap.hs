@@ -20,7 +20,7 @@ A total map from an enum type. Consult the README for more information
 -}
 
 module TotalMap
-    ( TotalMap()
+    ( TotalMap(..)
     , generateAllConstructors
     , allTags
     , getTotalMap
