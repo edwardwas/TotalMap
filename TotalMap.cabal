@@ -26,7 +26,7 @@ library
   -- other-modules:       
   -- other-extensions:    
   build-depends:       base >=4.9 && <4.13
-    , generics-sop >= 0.3 && < 0.5
+    , generics-sop >= 0.3 && < 0.6
     , lens >= 4.16 && < 4.20
     , adjunctions >= 4.4 && < 4.5
     , distributive >= 0.5 && < 0.7
@@ -37,7 +37,7 @@ library
 test-suite readme
   build-depends:       base >=4.8 && <4.13
     , TotalMap
-    , generics-sop >= 0.3 && < 0.5
+    , generics-sop >= 0.3 && < 0.6
     , lens >= 4.16 && < 4.20
     , adjunctions >= 4.4 && < 4.5
     , distributive >= 0.5 && < 0.7
